@@ -10,5 +10,10 @@ Este proyecto es un end-to-end pipeline de data engineering que utiliza el Olist
 - sql/: database schema y queries
 - dashboard/: visualizaciones
 
-## Status
-Setup del proyecto completo. Proximo paso: EDA.
+## Data Cleaning & Transformation
+- Convertir timestamp a datetime
+- Quitar duplicados en todas las tablas
+- Quitar registros invalidos 
+- Crear delivery_time_days para medir rendimiento logistico
+- Crear total_order_value de datos de payments
+- Extraido order_month para para analisis time-based
