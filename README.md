@@ -52,10 +52,10 @@ El volumen de órdenes muestra un crecimiento sostenido a lo largo del tiempo, c
 Los ingresos están concentrados en un número reducido de categorías, lideradas por *beleza_saude* y *relogios_presentes*, lo que sugiere una distribución tipo Pareto.
 
 - **Q3 — Tiempo de Entrega:**  
-El tiempo promedio de entrega es aproximadamente X días, con la mayoría de entregas en rangos bajos, pero con algunos casos extremos que afectan el promedio.
+El tiempo promedio de entrega es aproximadamente 12 días, con la mayoría de entregas en rangos bajos, pero con algunos casos extremos que afectan el promedio.
 
 - **Q4 — Resultados Negativos:**  
-Aproximadamente X% de las órdenes presentan resultados negativos (cancelaciones o bajas calificaciones), lo que indica un buen desempeño general con oportunidades de mejora.
+Aproximadamente 12.73% de las órdenes presentan resultados negativos (cancelaciones o bajas calificaciones), lo que indica un buen desempeño general con oportunidades de mejora.
 
 - **Q5 — Entrega vs Satisfacción:**  
 Los pedidos con retrasos presentan menores calificaciones, evidenciando una relación directa entre el desempeño logístico y la satisfacción del cliente.
