@@ -11,7 +11,7 @@ def load_data():
             file_path = os.path.join(RAW_PATH, file)
             df = pd.read_csv(file_path)
             dataframes[file] = df
-            print(f"Loaded {file} with shape {df.shape}")
+            print(f"Loaded {file} | Rows: {df.shape[0]} | Columns: {df.shape[1]}")
 
     return dataframes
 
