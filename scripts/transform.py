@@ -29,6 +29,9 @@ def transform():
     payments = data["olist_order_payments_dataset.csv"]
     products = data["olist_products_dataset.csv"]
 
+    reviews = data["olist_order_reviews_dataset.csv"]
+    sellers = data["olist_sellers_dataset.csv"]
+
     # --- CLEANING STARTS HERE ---
 
     # 1. Convert date columns
@@ -43,12 +46,21 @@ def transform():
     for col in date_cols:
         orders[col] = pd.to_datetime(orders[col], errors='coerce')
 
+    items["shipping_limit_date"] = pd.to_datetime(items["shipping_limit_date"], errors="coerce")
+
+    review_date_cols = ["review_creation_date", "review_answer_timestamp"]
+    for col in review_date_cols:
+        reviews[col] = pd.to_datetime(reviews[col], errors="coerce")
+
     # 2. Remove duplicates
     orders = orders.drop_duplicates()
     customers = customers.drop_duplicates()
     items = items.drop_duplicates()
     payments = payments.drop_duplicates()
     products = products.drop_duplicates()
+
+    reviews = reviews.drop_duplicates()
+    sellers = sellers.drop_duplicates()
 
     # 3. Handle missing values
     orders = orders.dropna(subset=["order_purchase_timestamp"])
@@ -77,6 +89,9 @@ def transform():
     save_data(items, "items_clean.csv")
     save_data(payments, "payments_clean.csv")
     save_data(products, "products_clean.csv")
+
+    save_data(reviews, "reviews_clean.csv")
+    save_data(sellers, "sellers_clean.csv")
 
     print("Transformation completed successfully.")
 
