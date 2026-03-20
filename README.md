@@ -3,6 +3,9 @@
 ## Resumen
 Este proyecto es un end-to-end pipeline de data engineering que utiliza el Olist Brazilian E-commerce dataset. Incluye data ingestion, limpieza, transformacion, modelado y visualizacion.
 
+## Dataset
+Se utilizo el dataset de Olist, la raw data se encuentra en data/raw y los datos limpios y transformados de encuentran en data/processed.
+
 ## Estructura
 - data/: raw y processed datasets
 - notebooks/: exploratory analysis
@@ -31,7 +34,7 @@ El dataset Olist limpio fue modelado en un esquema relacional analítico usando 
 ### Justificacion
 Este diseño se utilizo por las siguientes razones:
 - Apoya analisis de volumen de transacciones de tipo series de tiempo
-- Se puede indentificar clientes/productos/categorias top por su valor generado
+- Se puede identificar clientes/productos/categorias top por su valor generado
 - Calculo de promedio de delivery times
 - Cuantificar incidentes como cancelaciones y reseñas malas
 
