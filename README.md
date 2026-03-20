@@ -59,3 +59,15 @@ Aproximadamente X% de las órdenes presentan resultados negativos (cancelaciones
 
 - **Q5 — Entrega vs Satisfacción:**  
 Los pedidos con retrasos presentan menores calificaciones, evidenciando una relación directa entre el desempeño logístico y la satisfacción del cliente.
+
+## Fase 5: Pipeline
+
+Pipeline sigue los siguientes pasos:
+1. Data ingestion de los CSVs (raw)
+2. Limpieza de datos y transformaciones
+3. Modelado en un schema relacional (SQLite)
+4. Visualizacion y analisis de datos
+
+Para ejecutar el pipeline:
+
+python scripts/main.py
