@@ -40,3 +40,22 @@ Se cargan los CSVs limpios de data/processed a SQLite a traves de scripts/load.p
 1. Crear el schema con sql/create_tables.sql
 2. Inserta todos los registros a la base de datos
 3. Valida la carga haciendo print de los row counts
+
+## Fase 4: Visualización y Dashboard
+
+## Insights Clave
+
+- **Q1 — Volumen de Transacciones Mensual:**  
+El volumen de órdenes muestra un crecimiento sostenido a lo largo del tiempo, con un pico hacia finales de 2017, probablemente impulsado por eventos estacionales como promociones de fin de año.
+
+- **Q2 — Generadores de Valor:**  
+Los ingresos están concentrados en un número reducido de categorías, lideradas por *beleza_saude* y *relogios_presentes*, lo que sugiere una distribución tipo Pareto.
+
+- **Q3 — Tiempo de Entrega:**  
+El tiempo promedio de entrega es aproximadamente X días, con la mayoría de entregas en rangos bajos, pero con algunos casos extremos que afectan el promedio.
+
+- **Q4 — Resultados Negativos:**  
+Aproximadamente X% de las órdenes presentan resultados negativos (cancelaciones o bajas calificaciones), lo que indica un buen desempeño general con oportunidades de mejora.
+
+- **Q5 — Entrega vs Satisfacción:**  
+Los pedidos con retrasos presentan menores calificaciones, evidenciando una relación directa entre el desempeño logístico y la satisfacción del cliente.
