@@ -20,7 +20,7 @@ Este proyecto es un end-to-end pipeline de data engineering que utiliza el Olist
 
 ## Fase 3: Modelado y Carga en Base de Datos
 
-El dataset Olist limpio de modelo en un schema relacional analitico usando SQLite.
+El dataset Olist limpio fue modelado en un esquema relacional analítico usando SQLite.
 
 ### Diseno de schema
 - fact_orders es la tabla central para metricas a nivel de pedido
@@ -70,4 +70,26 @@ Pipeline sigue los siguientes pasos:
 
 Para ejecutar el pipeline:
 
+```bash
 python scripts/main.py
+```
+
+## Cómo ejecutar el proyecto
+Nota: Este proyecto fue desarrollado en macOS. En Windows, usar `venv\Scripts\activate`.
+
+```bash
+git clone https://github.com/MatiasJaramillo/data-engineer-challenge.git
+cd data-engineer-challenge
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python scripts/main.py
+```
+
+## Uso de Inteligencia Artificial
+
+Para el desarrollo de este proyecto se utilizó asistencia de herramientas de inteligencia artificial como apoyo en tareas específicas, tales como estructuración del pipeline, generación de ideas y validación de enfoques.
+
+Sin embargo, todas las decisiones clave; incluyendo el diseño del modelo de datos, la definición de métricas, la interpretación de resultados y los insights de negocio; fueron tomadas de manera consciente y fundamentada.
+
+El uso de estas herramientas permitió acelerar el desarrollo del proyecto y enfocarse en aspectos de mayor valor, como el análisis y la toma de decisiones, sin depender de ellas de forma pasiva.
